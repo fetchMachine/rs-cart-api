@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:12
 
 WORKDIR /app
 
@@ -11,4 +11,4 @@ RUN npm run build
 ENV PORT=3000
 EXPOSE 3000
 
-CMD ["node", "dist/main.js"]
+ENTRYPOINT ["node", "dist/main.js"]
