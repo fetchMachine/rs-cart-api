@@ -1,0 +1,10 @@
+# Elastic Beanstalk Files
+.elasticbeanstalk
+
+# tests
+test
+coverage
+
+# Logs
+logs
+*.log
