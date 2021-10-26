@@ -1,9 +1,9 @@
-FROM node:12
+FROM node:14
 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm i --only=prod
+RUN npm i
 
 COPY . .
 RUN npm run build
@@ -11,4 +11,4 @@ RUN npm run build
 ENV PORT=3000
 EXPOSE 3000
 
-ENTRYPOINT ["node", "dist/main.js"]
+CMD ["node", "dist/main.js"]
