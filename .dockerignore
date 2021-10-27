@@ -1,10 +1,16 @@
-# Elastic Beanstalk Files
+# Elastic Beanstalk Files, no need in production
 .elasticbeanstalk
 
-# tests
+# tests, no need in production
 test
 coverage
 
-# Logs
+# Logs, no need in production
 logs
 *.log
+
+# downloaded by itself during npm install
+node_modules
+
+# created by itself during npm run build
+dist
